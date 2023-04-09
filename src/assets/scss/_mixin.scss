@@ -1,0 +1,25 @@
+
+// .flex_col { display: flex; flex-flow: column; } 
+// .flex_row.ct { align-items: center; } 
+// .flex_row.align_start { align-items: flex-start; } 
+// .flex_row.align_end { align-items: flex-end; } 
+// .flex_row.justify_end { justify-content: flex-end; } 
+
+@mixin flex_row {
+  display: flex; flex-flow: row;
+  &.sb { justify-content: space-between; align-items: center; } 
+}
+
+@mixin pos-vertical {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+@mixin pos-horizontal {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
